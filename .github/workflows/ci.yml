@@ -1,0 +1,70 @@
+name: Contract tests
+
+# Runs every concept each stack has passed so far (progress.json), against a fresh server.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: echo "count=$(node -p "require('./progress.json').python.length")" >> "$GITHUB_OUTPUT"
+      - if: steps.p.outputs.count != '0'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - if: steps.p.outputs.count != '0'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - if: steps.p.outputs.count != '0'
+        name: Install
+        working-directory: python
+        run: python -m venv .venv && .venv/bin/pip install -r requirements.txt
+      - if: steps.p.outputs.count != '0'
+        name: Contract tests for every concept passed so far
+        run: ./check.sh python all
+
+  typescript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: echo "count=$(node -p "require('./progress.json').typescript.length")" >> "$GITHUB_OUTPUT"
+      - if: steps.p.outputs.count != '0'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - if: steps.p.outputs.count != '0'
+        name: Install and type-check
+        working-directory: typescript
+        run: npm ci && npx tsc --noEmit
+      - if: steps.p.outputs.count != '0'
+        name: Contract tests for every concept passed so far
+        run: ./check.sh typescript all
+
+  csharp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: echo "count=$(node -p "require('./progress.json').csharp.length")" >> "$GITHUB_OUTPUT"
+      - if: steps.p.outputs.count != '0'
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+      - if: steps.p.outputs.count != '0'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - if: steps.p.outputs.count != '0'
+        name: Build
+        working-directory: csharp
+        run: dotnet build
+      - if: steps.p.outputs.count != '0'
+        name: Contract tests for every concept passed so far
+        run: ./check.sh csharp all

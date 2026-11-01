@@ -1,0 +1,15 @@
+{
+  "name": "api-concepts-contract-tests",
+  "private": true,
+  "type": "module",
+  "description": "Black-box contract tests that run against any of the three Bookshop API servers.",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.12"
+  }
+}

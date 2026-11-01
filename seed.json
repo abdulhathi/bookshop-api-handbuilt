@@ -1,0 +1,345 @@
+[
+  {
+    "id": "prd_01",
+    "title": "HTTP from the Ground Up",
+    "author": "Maya Chen",
+    "priceCents": 3499,
+    "currency": "USD",
+    "tags": [
+      "http",
+      "basics"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "prd_02",
+    "title": "Designing Resource APIs",
+    "author": "Luis Ortega",
+    "priceCents": 4299,
+    "currency": "USD",
+    "tags": [
+      "rest",
+      "design"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:01:00.000Z",
+    "updatedAt": "2026-01-01T00:01:00.000Z"
+  },
+  {
+    "id": "prd_03",
+    "title": "JSON in Practice",
+    "author": "Priya Raman",
+    "priceCents": 2599,
+    "currency": "USD",
+    "tags": [
+      "json",
+      "basics"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:02:00.000Z",
+    "updatedAt": "2026-01-01T00:02:00.000Z"
+  },
+  {
+    "id": "prd_04",
+    "title": "Tokens and Trust",
+    "author": "Samuel Okafor",
+    "priceCents": 3999,
+    "currency": "USD",
+    "tags": [
+      "security",
+      "auth"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:03:00.000Z",
+    "updatedAt": "2026-01-01T00:03:00.000Z"
+  },
+  {
+    "id": "prd_05",
+    "title": "OAuth Without Tears",
+    "author": "Hana Suzuki",
+    "priceCents": 4499,
+    "currency": "USD",
+    "tags": [
+      "security",
+      "oauth"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:04:00.000Z",
+    "updatedAt": "2026-01-01T00:04:00.000Z"
+  },
+  {
+    "id": "prd_06",
+    "title": "The GraphQL Field Guide",
+    "author": "Noah Fischer",
+    "priceCents": 3799,
+    "currency": "USD",
+    "tags": [
+      "graphql"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:05:00.000Z",
+    "updatedAt": "2026-01-01T00:05:00.000Z"
+  },
+  {
+    "id": "prd_07",
+    "title": "Caching at the Edge",
+    "author": "Amira Haddad",
+    "priceCents": 3299,
+    "currency": "USD",
+    "tags": [
+      "caching",
+      "performance"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:06:00.000Z",
+    "updatedAt": "2026-01-01T00:06:00.000Z"
+  },
+  {
+    "id": "prd_08",
+    "title": "Rate Limits in Real Life",
+    "author": "Diego Alvarez",
+    "priceCents": 2899,
+    "currency": "USD",
+    "tags": [
+      "reliability"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:07:00.000Z",
+    "updatedAt": "2026-01-01T00:07:00.000Z"
+  },
+  {
+    "id": "prd_09",
+    "title": "Retry, Back Off, Recover",
+    "author": "Grace Kim",
+    "priceCents": 3199,
+    "currency": "USD",
+    "tags": [
+      "reliability"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:08:00.000Z",
+    "updatedAt": "2026-01-01T00:08:00.000Z"
+  },
+  {
+    "id": "prd_10",
+    "title": "Webhooks That Work",
+    "author": "Omar Siddiqui",
+    "priceCents": 2999,
+    "currency": "USD",
+    "tags": [
+      "webhooks",
+      "events"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:09:00.000Z",
+    "updatedAt": "2026-01-01T00:09:00.000Z"
+  },
+  {
+    "id": "prd_11",
+    "title": "Errors Worth Reading",
+    "author": "Elena Petrova",
+    "priceCents": 2499,
+    "currency": "USD",
+    "tags": [
+      "errors",
+      "design"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:10:00.000Z",
+    "updatedAt": "2026-01-01T00:10:00.000Z"
+  },
+  {
+    "id": "prd_12",
+    "title": "Pagination Patterns",
+    "author": "Kwame Mensah",
+    "priceCents": 2199,
+    "currency": "USD",
+    "tags": [
+      "design",
+      "performance"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:11:00.000Z",
+    "updatedAt": "2026-01-01T00:11:00.000Z"
+  },
+  {
+    "id": "prd_13",
+    "title": "Idempotent by Design",
+    "author": "Sofia Rossi",
+    "priceCents": 3599,
+    "currency": "USD",
+    "tags": [
+      "reliability",
+      "design"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:12:00.000Z",
+    "updatedAt": "2026-01-01T00:12:00.000Z"
+  },
+  {
+    "id": "prd_14",
+    "title": "Schemas First",
+    "author": "Ravi Patel",
+    "priceCents": 3399,
+    "currency": "USD",
+    "tags": [
+      "openapi",
+      "design"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:13:00.000Z",
+    "updatedAt": "2026-01-01T00:13:00.000Z"
+  },
+  {
+    "id": "prd_15",
+    "title": "CORS Explained",
+    "author": "Lena Novak",
+    "priceCents": 1999,
+    "currency": "USD",
+    "tags": [
+      "security",
+      "browser"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:14:00.000Z",
+    "updatedAt": "2026-01-01T00:14:00.000Z"
+  },
+  {
+    "id": "prd_16",
+    "title": "TLS for Developers",
+    "author": "Ahmed Karim",
+    "priceCents": 4199,
+    "currency": "USD",
+    "tags": [
+      "security",
+      "https"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:15:00.000Z",
+    "updatedAt": "2026-01-01T00:15:00.000Z"
+  },
+  {
+    "id": "prd_17",
+    "title": "Serverless APIs on AWS",
+    "author": "Julia Santos",
+    "priceCents": 4799,
+    "currency": "USD",
+    "tags": [
+      "aws",
+      "cloud"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:16:00.000Z",
+    "updatedAt": "2026-01-01T00:16:00.000Z"
+  },
+  {
+    "id": "prd_18",
+    "title": "Cloud Run in Production",
+    "author": "Ben Carter",
+    "priceCents": 4599,
+    "currency": "USD",
+    "tags": [
+      "gcp",
+      "cloud"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:17:00.000Z",
+    "updatedAt": "2026-01-01T00:17:00.000Z"
+  },
+  {
+    "id": "prd_19",
+    "title": "Shipping .NET on Azure",
+    "author": "Fatima Zahra",
+    "priceCents": 4699,
+    "currency": "USD",
+    "tags": [
+      "azure",
+      "cloud"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:18:00.000Z",
+    "updatedAt": "2026-01-01T00:18:00.000Z"
+  },
+  {
+    "id": "prd_20",
+    "title": "FastAPI Recipes",
+    "author": "Wei Zhang",
+    "priceCents": 3899,
+    "currency": "USD",
+    "tags": [
+      "python"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:19:00.000Z",
+    "updatedAt": "2026-01-01T00:19:00.000Z"
+  },
+  {
+    "id": "prd_21",
+    "title": "TypeScript Services",
+    "author": "Chloe Martin",
+    "priceCents": 3999,
+    "currency": "USD",
+    "tags": [
+      "typescript",
+      "node"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:20:00.000Z",
+    "updatedAt": "2026-01-01T00:20:00.000Z"
+  },
+  {
+    "id": "prd_22",
+    "title": "Minimal APIs in C#",
+    "author": "Arjun Nair",
+    "priceCents": 3799,
+    "currency": "USD",
+    "tags": [
+      "csharp",
+      "dotnet"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:21:00.000Z",
+    "updatedAt": "2026-01-01T00:21:00.000Z"
+  },
+  {
+    "id": "prd_23",
+    "title": "Timeouts and Deadlines",
+    "author": "Isabel Cruz",
+    "priceCents": 2799,
+    "currency": "USD",
+    "tags": [
+      "reliability"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:22:00.000Z",
+    "updatedAt": "2026-01-01T00:22:00.000Z"
+  },
+  {
+    "id": "prd_24",
+    "title": "Observability for APIs",
+    "author": "Tom\u00e1s Silva",
+    "priceCents": 4399,
+    "currency": "USD",
+    "tags": [
+      "operations"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:23:00.000Z",
+    "updatedAt": "2026-01-01T00:23:00.000Z"
+  },
+  {
+    "id": "prd_25",
+    "title": "The API Interview Handbook",
+    "author": "Nadia Rahman",
+    "priceCents": 2999,
+    "currency": "USD",
+    "tags": [
+      "career"
+    ],
+    "version": 1,
+    "createdAt": "2026-01-01T00:24:00.000Z",
+    "updatedAt": "2026-01-01T00:24:00.000Z"
+  }
+]
