@@ -24,5 +24,5 @@ PORT=9001 .venv/bin/uvicorn app.main:app --port 9001 --reload   # while coding: 
 
 - Load the seed products from `../seed.json` (the server runs from this folder).
 - Keep everything in memory, as the spec says: no database.
-- Libraries you will want later: PyJWT (concept 12), Strawberry (17), httpx (23, for the client). Pydantic comes with FastAPI.
+- Libraries you will want later: PyJWT (concept 10), Strawberry (17), httpx and pytest (23, for the client). Pydantic comes with FastAPI.
 - Check a concept: `cd .. && ./check.sh python 1`.

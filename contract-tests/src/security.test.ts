@@ -113,11 +113,12 @@ describe('13 · OAuth 2.0 client credentials', () => {
   });
 
   it('narrows the token to the requested scope', async () => {
-    const res = await tokenRequest({ grant_type: 'client_credentials', scope: 'products:read' }, ['reader', SECRETS.reader]);
+    const res = await tokenRequest({ grant_type: 'client_credentials', scope: 'products:read' }, ['writer', SECRETS.writer]);
     const body = await res.json();
     expect(body.scope).toBe('products:read');
     expect((await call('/v1/products', { token: body.access_token })).status).toBe(200);
-    await problem(await call('/v1/orders', { token: body.access_token }), 403, 'forbidden');
+    const create = { title: 'Narrow Scope', author: 'Test Author', priceCents: 1000, tags: [] };
+    await problem(await call('/v1/products', { method: 'POST', token: body.access_token, body: create }), 403, 'forbidden');
   });
 
   it('returns RFC 6749 errors', async () => {

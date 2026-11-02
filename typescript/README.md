@@ -26,6 +26,6 @@ PORT=9002 npx tsx watch src/index.ts   # while coding: restarts on save
 
 - Load the seed products from `../seed.json` (the server runs from this folder).
 - Keep everything in memory, as the spec says: no database.
-- Libraries you will want later: zod (concept 6), jose (12), graphql and graphql-http (17).
+- Libraries you will want later: zod (concept 6), jose (10), graphql and graphql-http (17), vitest (23, for the client).
 - Type-check with `npx tsc --noEmit` before you commit.
 - Check a concept: `cd .. && ./check.sh typescript 1`.

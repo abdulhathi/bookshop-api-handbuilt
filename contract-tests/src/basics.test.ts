@@ -57,8 +57,8 @@ describe('3 · HTTP methods', () => {
     expect(patch.res.status).toBe(200);
     expect(patch.body).toMatchObject({ title: 'Methods Matter 2e', priceCents: 1800, version: 3 });
 
-    const notAdmin = await call(`/v1/products/${id}`, { method: 'DELETE', token: writer });
-    if (AUTH !== 'off') await problem(notAdmin, 403, 'forbidden');
+    // The writer's DELETE is refused by scope checks (concept 11); before them it would succeed, so it waits for 11.
+    if (AUTH !== 'off' && built(11)) await problem(await call(`/v1/products/${id}`, { method: 'DELETE', token: writer }), 403, 'forbidden');
 
     const del = await call(`/v1/products/${id}`, { method: 'DELETE', token: await token('admin') });
     expect(del.status).toBe(204);

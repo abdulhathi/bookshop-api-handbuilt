@@ -22,8 +22,9 @@ dotnet watch --project src/Bookshop.Api --urls http://127.0.0.1:9003    # while 
 
 ## Tips
 
-- Load the seed products from `../seed.json` (the server runs from this folder).
+- Load the seed products from `../../../seed.json`: `dotnet run` and `dotnet watch` run the app from `src/Bookshop.Api`.
 - Keep everything in memory, as the spec says: no database.
-- Packages you will want later: Microsoft.AspNetCore.OpenApi (concept 8), Microsoft.AspNetCore.Authentication.JwtBearer
-  (10), HotChocolate.AspNetCore (17). Rate limiting, timeouts and problem details are built into ASP.NET Core.
+- Packages you will want later: Microsoft.AspNetCore.OpenApi and Scalar.AspNetCore (concept 8),
+  Microsoft.IdentityModel.JsonWebTokens (10), HotChocolate.AspNetCore (17). The lab's Build tab says which version.
+  Rate limiting and timeouts are built into ASP.NET Core.
 - Check a concept: `cd .. && ./check.sh csharp 1`.
