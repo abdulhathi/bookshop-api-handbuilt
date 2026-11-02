@@ -3,4 +3,6 @@ var app = builder.Build();
 
 app.MapGet("/health", () => new {status = "ok"});
 
+app.MapEcho();
+
 app.Run();
